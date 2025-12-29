@@ -12,6 +12,19 @@ import { MapDemo4 } from './Components/MapDemo4'
 import { MapDemo5 } from './Components/MapDemo5'
 import { MapDemo6 } from './Components/MapDemo6'
 import { MapDemo7 } from './Components/MapDemo7'
+import { MapTask1 } from './Components/MapTask1'
+import { MapTask2 } from './Components/MapTask2'
+import { Route, Routes } from 'react-router-dom'
+import { NetflixHome } from './Components/netflix/NetflixHome'
+import { NetflixShows } from './Components/netflix/NetflixShows'
+import { Navbar } from './Components/Navbar'
+import { Error404 } from './Components/Error404'
+import { HomeComponent } from './Components/HomeComponent'
+import { PlayContent } from './Components/netflix/PlayContent'
+import { NetflixMovies } from './Components/netflix/NetflixMovies'
+import { BooksTask1 } from './Components/Books/BooksTask1'
+import { UseStateDemo } from './Components/UseStateDemo'
+import { UseStateDemo2 } from './Components/UseStateDemo2'
 
 
 function App() {
@@ -27,14 +40,21 @@ function App() {
 
   return (
     <div>
-      {/* <MapDemo></MapDemo>
-      <MapDemo2></MapDemo2>
-      <MapDemo3></MapDemo3>
-      <MapDemo4></MapDemo4>
-      <MapDemo5></MapDemo5> */}
-      {/* <MapDemo6></MapDemo6> */}
-      <MapDemo7></MapDemo7>
+      <Navbar></Navbar>
+      <Routes>
         
+          <Route path='/' element = {<HomeComponent/>}></Route>
+          <Route path='/netflixhome' element = {<NetflixHome/>}></Route>
+          <Route path='/netflixshows' element = {<NetflixShows/>}></Route>
+          <Route path='/netflixmovies' element={<NetflixMovies/>}></Route>
+          {/* <Route path='/watch' element = {<PlayContent/>}></Route> */}
+          <Route path='/watch/:id' element = {<PlayContent/>}></Route>
+          <Route path = '/*' element = {<Error404/>}></Route>
+          <Route path='/BookssDescription' element = {BooksTask1}></Route>
+            <Route path = '/useStateDemo' element = {<UseStateDemo/>}></Route>
+            <Route path='/useStateDemo2' element = {<UseStateDemo2/>}></Route>
+      </Routes>
+
     </div>
   )
 }

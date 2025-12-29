@@ -1,7 +1,6 @@
 import React from 'react'
 
 export const MapTask1 = () => {
-    {
         const employees = [
             {
                 "employee_id": 1,
@@ -64,12 +63,11 @@ export const MapTask1 = () => {
                 "is_active": true
             }
         ]
-    }
 
     return (
         <div style={{ textAlign: "center" }}>
             <h1>Map Task 1</h1>
-            <table className='table'>
+            <table className='table' border={1} align='center'>
                 <thead>
                     <tr>
                         <th>Employee ID</th>
@@ -88,12 +86,21 @@ export const MapTask1 = () => {
                     {employees.map((emp , index) => {
                         return (
                             <tr>
-                                
+                                <td>{emp.employee_id}</td>
+                                <td>{emp.department_code}</td>
+                                <td>{emp.name}</td>
+                                <td style={{color : emp.age > 25 && "red"}}>{emp.age}</td>
+                                <td style={{backgroundColor : emp.gender == "Male" && "blue"}}>{emp.gender}</td>
+                                <td>{emp.department}</td>
+                                <td style={{color : emp.salary > 45000 && "orange"}}>{emp.salary}</td>
+                                <td>{emp.city}</td>
+                                <td style={{backgroundColor : emp.country && "red"}}>{emp.country}</td>
+                                <td style={{backgroundColor : emp.is_active  && "yellow"}}>{emp.is_active ? "Active" : "Inactive"}</td>
                             </tr>
                         )
                     })}
                 </tbody>
             </table>
         </div>
-    )
-}
+    );
+};
