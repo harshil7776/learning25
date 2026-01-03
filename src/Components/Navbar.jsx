@@ -9,7 +9,7 @@ export const Navbar = () => {
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
                             <Link class="link" to="/netflixhome">
-                                NetFlix Home
+                                <br />   NetFlix Home
                             </Link>
 
                         </li>
@@ -20,6 +20,7 @@ export const Navbar = () => {
                         </li>
                         <li class="nav-item active">
                             <Link class="link" to="/netflixmovies">
+                                <br />
                                 NetFlix Movies
                             </Link>
                         </li>
@@ -30,7 +31,13 @@ export const Navbar = () => {
                         </li>
                         <li class="nav-item active">
                             <Link class="link" to="/useStateDemo2">
+                                <br />
                                 UseStateDemo2
+                            </Link>
+                        </li>
+                        <li class="nav-item active">
+                            <Link class="link" to="/bookstask1" >
+                                Books
                             </Link>
                         </li>
                     </ul>

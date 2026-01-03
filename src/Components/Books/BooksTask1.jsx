@@ -17,22 +17,22 @@ export const BooksTask1 = () => {
     //     {id : 102 , name : "Data Structure"} , 
     //     {id : 103 , name : "C++ language"}
     // ];
-  return (
-    <div>
-        <h1>Books Task 1...</h1>
-        <div>
-            <ul>
-                <li>
-                    <Link to={"/Book/C_programing"}>C Programing</Link>
-                </li>
-                <li>
-                    <Link to={"/Book/Java"}>Java</Link>
-                </li>
-                <li>
-                    <Link to={"/Book/Data_struc"}>Data Structure</Link>
-                </li>
-            </ul>
+    return (
+        <div style={{textAlign : "center"}}> 
+            <h1>====Books Description====</h1>
+            <div>
+                <ul>
+                    <li>
+                        <Link to={"/Book/C_programing"}>C Programing</Link>
+                    </li>
+                    <li>
+                        <Link to={"/Book/Java"}>Java</Link>
+                    </li>
+                    <li>
+                        <Link to={"/Book/Data_struc"}>Data Structure</Link>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
-  )
+    )
 }

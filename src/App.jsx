@@ -22,13 +22,14 @@ import { Error404 } from './Components/Error404'
 import { HomeComponent } from './Components/HomeComponent'
 import { PlayContent } from './Components/netflix/PlayContent'
 import { NetflixMovies } from './Components/netflix/NetflixMovies'
-import { BooksTask1 } from './Components/Books/BooksTask1'
 import { UseStateDemo } from './Components/UseStateDemo'
 import { UseStateDemo2 } from './Components/UseStateDemo2'
+import { BooksTask1 } from './Components/Books/BooksTask1'
+import { BooksDescription } from './Components/Books/BooksDescription'
 
 
 function App() {
-  
+
   // var year = 2025
   // var country = "India"
   // var isAvailable = true
@@ -42,17 +43,17 @@ function App() {
     <div>
       <Navbar></Navbar>
       <Routes>
-        
-          <Route path='/' element = {<HomeComponent/>}></Route>
-          <Route path='/netflixhome' element = {<NetflixHome/>}></Route>
-          <Route path='/netflixshows' element = {<NetflixShows/>}></Route>
-          <Route path='/netflixmovies' element={<NetflixMovies/>}></Route>
-          {/* <Route path='/watch' element = {<PlayContent/>}></Route> */}
-          <Route path='/watch/:id' element = {<PlayContent/>}></Route>
-          <Route path = '/*' element = {<Error404/>}></Route>
-          <Route path='/BookssDescription' element = {BooksTask1}></Route>
-            <Route path = '/useStateDemo' element = {<UseStateDemo/>}></Route>
-            <Route path='/useStateDemo2' element = {<UseStateDemo2/>}></Route>
+        <Route path='/' element={<HomeComponent />}></Route>
+        <Route path='/netflixhome' element={<NetflixHome />}></Route>
+        <Route path='/netflixshows' element={<NetflixShows />}></Route>
+        <Route path='/netflixmovies' element={<NetflixMovies />}></Route>
+        {/* <Route path='/watch' element = {<PlayContent/>}></Route> */}
+        <Route path='/watch/:id' element={<PlayContent />}></Route>
+        <Route path='/*' element={<Error404 />}></Route>
+        <Route path='/useStateDemo' element={<UseStateDemo />}></Route>
+        <Route path='/useStateDemo2' element={<UseStateDemo2 />}></Route>
+        <Route path='/bookstask1' element={<BooksTask1/>}></Route>
+        <Route path='/Book/:id' element={<BooksDescription/>}></Route>
       </Routes>
 
     </div>
