@@ -26,6 +26,7 @@ import { UseStateDemo } from './Components/UseStateDemo'
 import { UseStateDemo2 } from './Components/UseStateDemo2'
 import { BooksTask1 } from './Components/Books/BooksTask1'
 import { BooksDescription } from './Components/Books/BooksDescription'
+import { UseStateDemo3 } from './Components/UseStateDemo3'
 
 
 function App() {
@@ -52,6 +53,7 @@ function App() {
         <Route path='/*' element={<Error404 />}></Route>
         <Route path='/useStateDemo' element={<UseStateDemo />}></Route>
         <Route path='/useStateDemo2' element={<UseStateDemo2 />}></Route>
+        <Route path='/useStateDemo3' element={<UseStateDemo3/>}></Route>
         <Route path='/bookstask1' element={<BooksTask1/>}></Route>
         <Route path='/Book/:id' element={<BooksDescription/>}></Route>
       </Routes>

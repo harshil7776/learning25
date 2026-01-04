@@ -40,6 +40,12 @@ export const Navbar = () => {
                                 Books
                             </Link>
                         </li>
+                        <li class="nav-item active">
+                            <Link class="link" to="/useStateDemo3" >
+                            <br />
+                                Use State Demo 3
+                            </Link>
+                        </li>
                     </ul>
                 </div>
             </nav>
