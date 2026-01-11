@@ -27,18 +27,11 @@ import { UseStateDemo2 } from './Components/UseStateDemo2'
 import { BooksTask1 } from './Components/Books/BooksTask1'
 import { BooksDescription } from './Components/Books/BooksDescription'
 import { UseStateDemo3 } from './Components/UseStateDemo3'
+import { Products } from './Components/Products'
+import { InputDemo1 } from './Components/input/InputDemo1'
 
 
 function App() {
-
-  // var year = 2025
-  // var country = "India"
-  // var isAvailable = true
-
-  // var user = {
-  //   name: "Harshil",
-  //   age: 24
-  // }
 
   return (
     <div>
@@ -53,9 +46,11 @@ function App() {
         <Route path='/*' element={<Error404 />}></Route>
         <Route path='/useStateDemo' element={<UseStateDemo />}></Route>
         <Route path='/useStateDemo2' element={<UseStateDemo2 />}></Route>
-        <Route path='/useStateDemo3' element={<UseStateDemo3/>}></Route>
-        <Route path='/bookstask1' element={<BooksTask1/>}></Route>
-        <Route path='/Book/:id' element={<BooksDescription/>}></Route>
+        <Route path='/useStateDemo3' element={<UseStateDemo3 />}></Route>
+        <Route path='/products' element={<Products />}></Route>
+        <Route path='/bookstask1' element={<BooksTask1 />}></Route>
+        <Route path='/Book/:id' element={<BooksDescription />}></Route>
+        <Route path='/inputdemo1' element={<InputDemo1/>}></Route>
       </Routes>
 
     </div>
