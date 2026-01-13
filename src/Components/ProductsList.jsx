@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { SubProductsList } from './SubProductsList';
 import { Products } from './Products';
 
 export const ProductsList = (props) => {
+
+    const [selectedProducts , setSelectedProducts] = useState("");
 
     console.log("Product List", props)
 
@@ -31,7 +33,7 @@ export const ProductsList = (props) => {
                                 <td>{prod.price}</td>
                                 <td>{prod.color}</td>
                                 <td>
-                                    <button onClick={()=>{prod.productData}} className='btn btn-danger'> SHOW</button>
+                                    <button onClick={()=> setSelectedProducts(prod) } className='btn btn-danger'> SHOW</button>
                                 </td>
                             </tr>
                         );

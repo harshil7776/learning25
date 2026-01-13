@@ -46,15 +46,33 @@ export const Navbar = () => {
                                 Use State Demo 3
                             </Link>
                         </li>
-                        <li class="nav-item active">
+                        {/* <li class="nav-item active">
                             <Link class="link" to="/products" >
                                 Products
                             </Link>
+                        </li> */}
+                      
+                        {/* <li class="nav-item active">
+                            <Link class="link" to="/products1" >
+                                Products1
+                            </Link>
+                        </li> */}
+
+                        <li class="nav-item active">
+                            <Link class="link" to="/product2" >
+                            Product
+                            </Link>
                         </li>
+                      
                         <li class="nav-item active">
                             <Link class="link" to="/inputdemo1" >
                             <br />
                             inputdemo1
+                            </Link>
+                        </li>
+                        <li class="nav-item active">
+                            <Link class="link" to="/inputdemo2" >
+                            inputdemo2
                             </Link>
                         </li>
                     </ul>

@@ -1,4 +1,6 @@
 import React from 'react'
+import { ProductsList } from './ProductsList'
+import { Products } from './Products'
 
 export const SubProductsList = (props) => {
     return (
@@ -16,12 +18,14 @@ export const SubProductsList = (props) => {
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>{}</td>
-                        <td>{}</td>
-                        <td>{}</td>
-                        <td>{}</td>
-                    </tr>
+                    {Products.map((prod) => (
+                        <tr key={prod.id}>
+                            <td>{prod.id}</td>
+                            <td>{prod.name}</td>
+                            <td>{prod.price}</td>
+                            <td>{prod.color}</td>
+                        </tr>
+                    ))}
                 </tbody>
             </table>
         </div>
