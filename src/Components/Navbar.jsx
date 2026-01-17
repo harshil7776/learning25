@@ -75,6 +75,12 @@ export const Navbar = () => {
                             inputdemo2
                             </Link>
                         </li>
+                        <li class="nav-item active">
+                            <Link class="link" to="/dropdown" >
+                            <br />
+                            DropDown
+                            </Link>
+                        </li>
                     </ul>
                 </div>
             </nav>

@@ -27,11 +27,11 @@ import { UseStateDemo2 } from './Components/UseStateDemo2'
 import { BooksTask1 } from './Components/Books/BooksTask1'
 import { BooksDescription } from './Components/Books/BooksDescription'
 import { UseStateDemo3 } from './Components/UseStateDemo3'
-import { Products } from './Components/Products'
 import { InputDemo1 } from './Components/input/InputDemo1'
 import { InputDemo2 } from './Components/input/InputDemo2'
-import { Products1 } from './Components/Products1'
 import { Product2 } from './Components/Product2'
+import { SelectDropDown } from './Components/SelectDropDown'
+import { DependDropDown } from './Components/input/DependDropDown'
 
 
 function App() {
@@ -50,14 +50,13 @@ function App() {
         <Route path='/useStateDemo' element={<UseStateDemo />}></Route>
         <Route path='/useStateDemo2' element={<UseStateDemo2 />}></Route>
         <Route path='/useStateDemo3' element={<UseStateDemo3 />}></Route>
-        {/* <Route path='/products' element={<Products />}></Route> */}
-        {/* <Route path='/products1' element={<Products1/>}></Route> */}
         <Route path='/bookstask1' element={<BooksTask1 />}></Route>
         <Route path='/Book/:id' element={<BooksDescription />}></Route>
         <Route path='/inputdemo1' element={<InputDemo1/>}></Route>
         <Route path='/inputdemo2' element={<InputDemo2/>}></Route>
         <Route path='/product2' element={<Product2/>}></Route>
-
+        {/* <Route path='/selectdropdown' element={<SelectDropDown/>}></Route> */}
+        <Route path='/dropdown' element={<DependDropDown/>}></Route>
       </Routes>
 
     </div>

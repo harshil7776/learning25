@@ -23,17 +23,16 @@ export const Product2 = () => {
   const [selectedProducts2, setselectedProducts2] = useState([]);
 
   const selectProduct2 = (product) => {
-      const exists = selectedProducts2.find((p)=>p.id===Product2.id);
-      if(!exists)
-      {
-        setselectedProducts2([...selectedProducts2,product]);
-      }
+    const exists = selectedProducts2.find((p) => p.id === Product2.id);
+    if (!exists) {
+      setselectedProducts2([...selectedProducts2, product]);
+    }
   }
 
   return (
     <div style={{ textAlign: "center" }}>
       <h1>Product2</h1>
-      <ProductList2 title={title} detail={Companydetail} productData={productData} onSelect = {selectProduct2} selectedProducts2={selectedProducts2} productdata={productData}/>
+      <ProductList2 title={title} detail={Companydetail} productData={productData} onSelect={selectProduct2} selectedProducts2={selectedProducts2} productdata={productData} />
     </div>
   )
 }
