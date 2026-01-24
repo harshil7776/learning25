@@ -32,6 +32,8 @@ import { InputDemo2 } from './Components/input/InputDemo2'
 import { Product2 } from './Components/Product2'
 import { SelectDropDown } from './Components/SelectDropDown'
 import { DependDropDown } from './Components/input/DependDropDown'
+import { Formdemo1 } from './Components/form/Formdemo1'
+import { Formdemo2 } from './Components/form/Formdemo2'
 
 
 function App() {
@@ -57,6 +59,8 @@ function App() {
         <Route path='/product2' element={<Product2/>}></Route>
         {/* <Route path='/selectdropdown' element={<SelectDropDown/>}></Route> */}
         <Route path='/dropdown' element={<DependDropDown/>}></Route>
+        <Route path='/formdemo1' element={<Formdemo1/>}></Route>
+        <Route path='/formdemo2' element={<Formdemo2/>}></Route>
       </Routes>
 
     </div>
