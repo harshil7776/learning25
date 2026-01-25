@@ -34,6 +34,10 @@ import { SelectDropDown } from './Components/SelectDropDown'
 import { DependDropDown } from './Components/input/DependDropDown'
 import { Formdemo1 } from './Components/form/Formdemo1'
 import { Formdemo2 } from './Components/form/Formdemo2'
+import { Formdemo3 } from './Components/form/Formdemo3'
+import { Formdemo4 } from './Components/form/Formdemo4'
+import { Formdemo5 } from './Components/form/Formdemo5'
+import { Formdemo6 } from './Components/form/Formdemo6'
 
 
 function App() {
@@ -61,6 +65,10 @@ function App() {
         <Route path='/dropdown' element={<DependDropDown/>}></Route>
         <Route path='/formdemo1' element={<Formdemo1/>}></Route>
         <Route path='/formdemo2' element={<Formdemo2/>}></Route>
+        {/* <Route path='formdemo3' element = {<Formdemo3/>}></Route> */}
+        {/* <Route path='formdemo4' element = {<Formdemo4/>}></Route> */}
+        <Route path='/formdemo5' element = {<Formdemo5/>}></Route>
+        <Route path='/formdemo6' element = {<Formdemo6/>}></Route>
       </Routes>
 
     </div>
