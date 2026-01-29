@@ -18,7 +18,7 @@ export const Navbar = () => {
                                 NetFlix Shows
                             </Link>
                         </li>
-                        <li class="nav-item active">
+                        {/* <li class="nav-item active">
                             <Link class="link" to="/netflixmovies">
                                 <br />
                                 NetFlix Movies
@@ -45,7 +45,7 @@ export const Navbar = () => {
                                 <br />
                                 Use State Demo 3
                             </Link>
-                        </li>
+                        </li> */}
                         {/* <li class="nav-item active">
                             <Link class="link" to="/products" >
                                 Products
@@ -58,7 +58,7 @@ export const Navbar = () => {
                             </Link>
                         </li> */}
 
-                        <li class="nav-item active">
+                        {/* <li class="nav-item active">
                             <Link class="link" to="/product2" >
                             Product
                             </Link>
@@ -83,7 +83,7 @@ export const Navbar = () => {
                         </li>
                         <li class="nav-item active">
                             <Link class="link" to="/formdemo1" >
-                            Formdemo
+                            Formdemo1
                             </Link>
                         </li>
                         <li class="nav-item active">
@@ -91,27 +91,28 @@ export const Navbar = () => {
                             <br />
                             Formdemo2
                             </Link>
-                        </li>
-                        <li class="nav-item active">
-                            <Link class="link" to="/formdemo3" >
-                            Formdemo3
-                            </Link>
-                        </li>
-                        <li class="nav-item active">
-                            <Link class="link" to="/formdemo4" >
-                            <br />
-                            Formdemo4
-                            </Link>
-                        </li>
+                        </li> */}
+                        
                         <li class="nav-item active">
                             <Link class="link" to="/formdemo5" >
+                            <br />
                             Formdemo5
                             </Link>
                         </li>
                         <li class="nav-item active">
                             <Link class="link" to="/formdemo6" >
-                            <br />
                             Formdemo6
+                            </Link>
+                        </li>
+                        <li class="nav-item active">
+                            <Link class="link" to="/formdemo7" >
+                            <br />
+                            Formdemo7
+                            </Link>
+                        </li>
+                        <li class="nav-item active">
+                            <Link class="link" to="/formtask1" >
+                            FormTask1
                             </Link>
                         </li>
                     </ul>
