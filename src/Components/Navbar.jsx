@@ -51,7 +51,7 @@ export const Navbar = () => {
                                 Products
                             </Link>
                         </li> */}
-                      
+
                         {/* <li class="nav-item active">
                             <Link class="link" to="/products1" >
                                 Products1
@@ -92,27 +92,33 @@ export const Navbar = () => {
                             Formdemo2
                             </Link>
                         </li> */}
-                        
+
                         <li class="nav-item active">
                             <Link class="link" to="/formdemo5" >
-                            <br />
-                            Formdemo5
+                                <br />
+                                Formdemo5
                             </Link>
                         </li>
                         <li class="nav-item active">
                             <Link class="link" to="/formdemo6" >
-                            Formdemo6
+                                Formdemo6
                             </Link>
                         </li>
                         <li class="nav-item active">
                             <Link class="link" to="/formdemo7" >
-                            <br />
-                            Formdemo7
+                                <br />
+                                Formdemo7
                             </Link>
                         </li>
                         <li class="nav-item active">
                             <Link class="link" to="/formtask1" >
-                            FormTask1
+                                FormTask1
+                            </Link>
+                        </li>
+                        <li class="nav-item active">
+                            <Link class="link" to="/iplteam" >
+                                <br />
+                                Task1
                             </Link>
                         </li>
                     </ul>

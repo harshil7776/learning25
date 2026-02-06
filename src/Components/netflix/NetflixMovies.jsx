@@ -11,9 +11,9 @@ export const NetflixMovies = () => {
     <div style={{textAlign:"center"}}>
         <h1>Movie List...</h1>
         {
-            movies.map((movies)=>{
+            movies.map((movie)=>{
                 return <li>
-                    <Link to={'/watch/${movie.name}'}>{movies.name}</Link>
+                    <Link to={`/watch/${movie.name}`}>{movies.name}</Link>
                 </li>
             })
         }

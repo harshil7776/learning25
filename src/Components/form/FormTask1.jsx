@@ -124,17 +124,20 @@ export const FormTask1 = () => {
                     VOLLYBALL<input type='checkbox' value='vollyball' {...register("hobbies", validateSchema.hobbies)}></input>
                     {errors.hobbies?.message}
                 </div>
-                <div >
+                <div>
                     <label><h3>COUNTRIES :</h3></label><br />
-                    <select  {...register("countries", validateSchema.countries)} >
-                        <option selected disabled>Select Country</option>
-                        <option>INDIA</option>
-                        <option>USA</option>
-                        <option>CANADA</option>
-                        <option>DUBAI</option>
+
+                    <select {...register("countries", validateSchema.countries)}>
+                        <option value="" selected disabled>Select Country</option>
+                        <option value="INDIA">INDIA</option>
+                        <option value="USA">USA</option>
+                        <option value="CANADA">CANADA</option>
+                        <option value="DUBAI">DUBAI</option>
                     </select>
+
                     {errors.countries?.message}
                 </div>
+
                 <div>
                     <label><h3>EMAIL : </h3></label>
                     <input type='email' {...register("email", validateSchema.email)}></input>
