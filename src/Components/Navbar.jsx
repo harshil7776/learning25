@@ -121,6 +121,34 @@ export const Navbar = () => {
                                 Task1
                             </Link>
                         </li>
+                        <li class="nav-item active">
+                            <Link class="link" to="/formtask8" >
+                                FormTask8
+                            </Link>
+                        </li>
+                        <li class="nav-item active">
+                            <Link class="link" to="/formtask2watch" >
+                            <br />
+                                FormTask2
+                            </Link>
+                        </li>
+                        <li class="nav-item active">
+                            <Link class="link" to="/formtask9" >
+                                FormTask9
+                            </Link>
+                        </li>
+                        <li class="nav-item active">
+                            <Link class="link" to="/irctctask2" >
+                            <br />
+                                IRCTC
+                            </Link>
+                        </li>
+                        <li class="nav-item active">
+                            <Link class="link" to="/apidemo1" >
+                            apidemo1
+                            </Link>
+                        </li>
+                       
                     </ul>
                 </div>
             </nav>

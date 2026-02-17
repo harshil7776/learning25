@@ -41,6 +41,11 @@ import { Formdemo7 } from './Components/form/Formdemo7'
 import { FormTask1 } from './Components/form/FormTask1'
 import { Task1 } from './Components/internship/task/Task1'
 import { Play } from './Components/internship/task/Play'
+import { Formdemo8 } from './Components/form/Formdemo8'
+import { FormdemoTask2 } from './Components/form/FormdemoTask2'
+import { Formdemo9 } from './Components/form/Formdemo9'
+import { Formtask2 } from './Components/form/Formtask2'
+import { ApiDemo1 } from './Components/api/ApiDemo1'
 
 
 function App() {
@@ -72,8 +77,14 @@ function App() {
         <Route path='/formdemo6' element = {<Formdemo6/>}></Route>
         <Route path='/formdemo7' element = {<Formdemo7/>}></Route>
         <Route path='/formtask1' element = {<FormTask1/>}></Route>
+        <Route path='/formtask8' element = {<Formdemo8/>}></Route>
+        <Route path='/formtask2watch' element = {<FormdemoTask2/>}></Route>
         <Route path='/iplteam' element = {<Task1/>}></Route>
         <Route path='/ipl/:id' element = {<Play/>}></Route>
+        <Route path='/formtask9' element = {<Formdemo9/>}></Route>
+        <Route path='/irctctask2' element = {<Formtask2/>}></Route>
+        <Route path='/apidemo1' element = {<ApiDemo1/>}></Route>
+
       </Routes>
 
     </div>
