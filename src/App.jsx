@@ -46,6 +46,11 @@ import { FormdemoTask2 } from './Components/form/FormdemoTask2'
 import { Formdemo9 } from './Components/form/Formdemo9'
 import { Formtask2 } from './Components/form/Formtask2'
 import { ApiDemo1 } from './Components/api/ApiDemo1'
+import { ApiDemo2 } from './Components/api/ApiDemo2'
+import { OmbdApiDemo } from './Components/api/OmbdApiDemo'
+import { UseEffectDemo1 } from './Components/UseEffectDemo1'
+import { ApiDemo3 } from './Components/api/ApiDemo3'
+import { ApiFormDemo1 } from './Components/api/ApiFormDemo1'
 
 
 function App() {
@@ -84,7 +89,11 @@ function App() {
         <Route path='/formtask9' element = {<Formdemo9/>}></Route>
         <Route path='/irctctask2' element = {<Formtask2/>}></Route>
         <Route path='/apidemo1' element = {<ApiDemo1/>}></Route>
-
+        <Route path='/apidemo2' element = {<ApiDemo2/>}></Route>
+        <Route path='/apidemo3' element = {<ApiDemo3/>}></Route>
+        <Route path='/apiform' element = {<ApiFormDemo1/>}></Route>
+        <Route path='/ombd' element = {<OmbdApiDemo/>}></Route>
+        <Route path='/useeffect' element = {<UseEffectDemo1/>}></Route>
       </Routes>
 
     </div>

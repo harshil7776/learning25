@@ -15,7 +15,7 @@
 
 // array -->map -->iterate..
 import axios from 'axios'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { data } from 'react-router-dom'
 
 export const ApiDemo1 = () => {
@@ -34,11 +34,16 @@ export const ApiDemo1 = () => {
         setusers(response.data.data)
     }
 
+    useEffect(()=>{
+        getUser()
+    },[])
+
+
   return (
     <div style={{textAlign:"center"}}>
 
         <h1>Api Demo 1</h1>
-        <button onClick={()=>{getUser()}}>GET</button>
+        {/* <button onClick={()=>{getUser()}}>GET</button> */}
         {message}
         {
             users.map((user)=>{

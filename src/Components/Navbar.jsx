@@ -148,6 +148,34 @@ export const Navbar = () => {
                             apidemo1
                             </Link>
                         </li>
+                        <li class="nav-item active">
+                            <Link class="link" to="/apidemo2" >
+                            <br />
+                            apidemo2
+                            </Link>
+                        </li>
+                        <li class="nav-item active">
+                            <Link class="link" to="/apidemo3" >
+                            apidemo3
+                            </Link>
+                        </li>
+                        <li class="nav-item active">
+                            <Link class="link" to="/ombd" >
+                            <br />                            
+                            Ombd
+                            </Link>
+                        </li>
+                        <li class="nav-item active">
+                            <Link class="link" to="/useeffect" >
+                            <br />
+                                UseEffect
+                            </Link>
+                        </li>
+                        <li class="nav-item active">
+                            <Link class="link" to="/apiform" >
+                                ApiForm
+                            </Link>
+                        </li>
                        
                     </ul>
                 </div>
