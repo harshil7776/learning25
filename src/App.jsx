@@ -51,6 +51,7 @@ import { OmbdApiDemo } from './Components/api/OmbdApiDemo'
 import { UseEffectDemo1 } from './Components/UseEffectDemo1'
 import { ApiDemo3 } from './Components/api/ApiDemo3'
 import { ApiFormDemo1 } from './Components/api/ApiFormDemo1'
+import { Bounce, ToastContainer, Zoom } from 'react-toastify'
 
 
 function App() {
@@ -58,6 +59,19 @@ function App() {
   return (
     <div>
       <Navbar></Navbar>
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="colored"
+        transition={Bounce}
+      />
       <Routes>
         <Route path='/' element={<HomeComponent />}></Route>
         <Route path='/netflixhome' element={<NetflixHome />}></Route>
@@ -71,29 +85,29 @@ function App() {
         <Route path='/useStateDemo3' element={<UseStateDemo3 />}></Route>
         <Route path='/bookstask1' element={<BooksTask1 />}></Route>
         <Route path='/Book/:id' element={<BooksDescription />}></Route>
-        <Route path='/inputdemo1' element={<InputDemo1/>}></Route>
-        <Route path='/inputdemo2' element={<InputDemo2/>}></Route>
-        <Route path='/product2' element={<Product2/>}></Route>
+        <Route path='/inputdemo1' element={<InputDemo1 />}></Route>
+        <Route path='/inputdemo2' element={<InputDemo2 />}></Route>
+        <Route path='/product2' element={<Product2 />}></Route>
         {/* <Route path='/selectdropdown' element={<SelectDropDown/>}></Route> */}
-        <Route path='/dropdown' element={<DependDropDown/>}></Route>
-        <Route path='/formdemo1' element={<Formdemo1/>}></Route>
-        <Route path='/formdemo2' element={<Formdemo2/>}></Route>
-        <Route path='/formdemo5' element = {<Formdemo5/>}></Route>
-        <Route path='/formdemo6' element = {<Formdemo6/>}></Route>
-        <Route path='/formdemo7' element = {<Formdemo7/>}></Route>
-        <Route path='/formtask1' element = {<FormTask1/>}></Route>
-        <Route path='/formtask8' element = {<Formdemo8/>}></Route>
-        <Route path='/formtask2watch' element = {<FormdemoTask2/>}></Route>
-        <Route path='/iplteam' element = {<Task1/>}></Route>
-        <Route path='/ipl/:id' element = {<Play/>}></Route>
-        <Route path='/formtask9' element = {<Formdemo9/>}></Route>
-        <Route path='/irctctask2' element = {<Formtask2/>}></Route>
-        <Route path='/apidemo1' element = {<ApiDemo1/>}></Route>
-        <Route path='/apidemo2' element = {<ApiDemo2/>}></Route>
-        <Route path='/apidemo3' element = {<ApiDemo3/>}></Route>
-        <Route path='/apiform' element = {<ApiFormDemo1/>}></Route>
-        <Route path='/ombd' element = {<OmbdApiDemo/>}></Route>
-        <Route path='/useeffect' element = {<UseEffectDemo1/>}></Route>
+        <Route path='/dropdown' element={<DependDropDown />}></Route>
+        <Route path='/formdemo1' element={<Formdemo1 />}></Route>
+        <Route path='/formdemo2' element={<Formdemo2 />}></Route>
+        <Route path='/formdemo5' element={<Formdemo5 />}></Route>
+        <Route path='/formdemo6' element={<Formdemo6 />}></Route>
+        <Route path='/formdemo7' element={<Formdemo7 />}></Route>
+        <Route path='/formtask1' element={<FormTask1 />}></Route>
+        <Route path='/formtask8' element={<Formdemo8 />}></Route>
+        <Route path='/formtask2watch' element={<FormdemoTask2 />}></Route>
+        <Route path='/iplteam' element={<Task1 />}></Route>
+        <Route path='/ipl/:id' element={<Play />}></Route>
+        <Route path='/formtask9' element={<Formdemo9 />}></Route>
+        <Route path='/irctctask2' element={<Formtask2 />}></Route>
+        <Route path='/apidemo1' element={<ApiDemo1 />}></Route>
+        <Route path='/apidemo2' element={<ApiDemo2 />}></Route>
+        <Route path='/apidemo3' element={<ApiDemo3 />}></Route>
+        <Route path='/apiform' element={<ApiFormDemo1 />}></Route>
+        <Route path='/ombd' element={<OmbdApiDemo />}></Route>
+        <Route path='/useeffect' element={<UseEffectDemo1 />}></Route>
       </Routes>
 
     </div>
