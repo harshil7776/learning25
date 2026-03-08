@@ -17,7 +17,7 @@
 import axios from 'axios'
 import React, { use, useEffect, useState } from 'react'
 import { Button, Modal } from 'react-bootstrap'
-import { data } from 'react-router-dom'
+import { data, Link } from 'react-router-dom'
 import { toast } from 'react-toastify'
 import { CustomLoader } from '../CustomLoader'
 
@@ -118,6 +118,9 @@ export const ApiDemo1 = () => {
                                 <button className='btn btn-primary' style={{ marginLeft: "10px" }} onClick={() => { detailUser(user._id) }}>
                                     DETAIL
                                 </button>
+
+                                <Link to={`/updateuser/${user._id}`} className="btn btn-info">UPDATE</Link>
+
                             </td>
                         </tr>
                     ))}

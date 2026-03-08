@@ -1,3 +1,10 @@
+.container{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+
 .pl {
     display: block;
     width: 9.375em;

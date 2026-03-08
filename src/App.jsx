@@ -52,6 +52,7 @@ import { UseEffectDemo1 } from './Components/UseEffectDemo1'
 import { ApiDemo3 } from './Components/api/ApiDemo3'
 import { ApiFormDemo1 } from './Components/api/ApiFormDemo1'
 import { Bounce, ToastContainer, Zoom } from 'react-toastify'
+import { UpdateUser } from './Components/api/UpdateUser'
 
 
 function App() {
@@ -103,6 +104,7 @@ function App() {
         <Route path='/formtask9' element={<Formdemo9 />}></Route>
         <Route path='/irctctask2' element={<Formtask2 />}></Route>
         <Route path='/apidemo1' element={<ApiDemo1 />}></Route>
+        <Route path='/updateuser/:id' element = {<UpdateUser/>}></Route>
         <Route path='/apidemo2' element={<ApiDemo2 />}></Route>
         <Route path='/apidemo3' element={<ApiDemo3 />}></Route>
         <Route path='/apiform' element={<ApiFormDemo1 />}></Route>
