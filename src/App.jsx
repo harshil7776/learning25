@@ -53,6 +53,9 @@ import { ApiDemo3 } from './Components/api/ApiDemo3'
 import { ApiFormDemo1 } from './Components/api/ApiFormDemo1'
 import { Bounce, ToastContainer, Zoom } from 'react-toastify'
 import { UpdateUser } from './Components/api/UpdateUser'
+import { UseMemoDemo } from './Components/UseMemoDemo'
+import { FindBombGame } from './Components/FindBombGame'
+import { MemoryGame } from './Components/MemoryGame'
 
 
 function App() {
@@ -110,6 +113,9 @@ function App() {
         <Route path='/apiform' element={<ApiFormDemo1 />}></Route>
         <Route path='/ombd' element={<OmbdApiDemo />}></Route>
         <Route path='/useeffect' element={<UseEffectDemo1 />}></Route>
+        <Route path='/usememo' element = {<UseMemoDemo/>}></Route>
+        <Route path='/findbomb' element = {<FindBombGame/>}></Route>
+        <Route path='/memorygame' element = {<MemoryGame/>}></Route>
       </Routes>
 
     </div>

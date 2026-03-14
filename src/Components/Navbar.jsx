@@ -176,6 +176,23 @@ export const Navbar = () => {
                                 ApiForm
                             </Link>
                         </li>
+                        <li class="nav-item active">
+                            <Link class="link" to="/usememo" >
+                            <br />
+                            usememo
+                            </Link>
+                        </li>
+                        <li class="nav-item active">
+                            <Link class="link" to="/findbomb" >
+                            findbomb
+                            </Link>
+                        </li>
+                        <li class="nav-item active">
+                            <Link class="link" to="/memorygame" >
+                            <br />
+                            memorygame
+                            </Link>
+                        </li>
                        
                     </ul>
                 </div>
