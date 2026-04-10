@@ -4,18 +4,26 @@ import { UseRefDemo2 } from "../Components/UseRefDemo2";
 import { Navbar } from "../Components/Navbar"
 import { ProductComponent } from "../Components/ProductComponent";
 import { BankComponent } from "../Components/BankComponent";
-const router = createBrowserRouter([
+import { Login } from "../Components/Login";
+import ProtectedRoutes from "../Components/ProtectedRoutes";
+import { AdminSideBar } from "../Components/AdminSideBar";
+import { ApiDemo1 } from "../Components/api/ApiDemo1"
 
+const router = createBrowserRouter([
     {
         path: "/",
+        element: <Login />
+    },
+    {
+        path: "/user",
         element: <Navbar />,
 
         children: [
             {
-                path: "/useref1", element: <UseRefDemo1 />
+                path: "", element: <UseRefDemo1 />
             },
             {
-                path: "/useref2", element: <UseRefDemo2 />
+                path: "/useref1", element: <UseRefDemo1 />
             },
             {
                 path: "productcomponent",
@@ -24,10 +32,31 @@ const router = createBrowserRouter([
             {
                 path: "bank",
                 element: <BankComponent />
+            },
+            {
+                path: "useref2",
+                element: <ProtectedRoutes roles={["user", "admin"]}>
+                    <UseRefDemo2 />
+                </ProtectedRoutes>
             }
-
-
         ]
+    },
+    {
+        path: "/admin",
+        element: <AdminSideBar />,
+        children: [
+            {
+                path: "",
+                element: <ProtectedRoutes roles={["admin"]}>
+                    <ApiDemo1></ApiDemo1>
+                </ProtectedRoutes>
+            },
+            {
+                path:"apidemo1",
+                element:<ApiDemo1></ApiDemo1>
+            }
+        ]
+
     }
 
 ]);

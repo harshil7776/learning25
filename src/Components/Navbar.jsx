@@ -108,7 +108,7 @@ export const Navbar = () => {
                             Formdemo2
                             </Link>
                         </li> */}
-{/* 
+                        {/* 
                         <li class="nav-item active">
                             <Link class="link" to="/formdemo5" >
                                 <br />
@@ -217,37 +217,37 @@ export const Navbar = () => {
                         </li>
                         <li class="nav-item active">
                             <Link class="link" to="/useref1" >
-                            <br />
-                            UseRefDemo1
+                                <br />
+                                UseRefDemo1
                             </Link>
                         </li>
                         <li class="nav-item active">
                             <Link class="link" to="/useref2" >
-                            UseRefDemo2
+                                UseRefDemo2
                             </Link>
                         </li>
                         <li class="nav-item active">
                             <Link class="link" to="/stopwatch" >
-                            <br />
-                            StopWatch
+                                <br />
+                                StopWatch
                             </Link>
                         </li>
                         <li class="nav-item active">
                             <Link class="link" to="/loginapi" >
-                            loginapi
+                                loginapi
                             </Link>
                         </li>
                         <li class="nav-item active">
                             <Link class="link" to="/getitem" >
-                            getitem
+                                getitem
                             </Link>
                         </li>
 
                     </ul>
                 </div>
             </nav>
-            <div style={{marginTop:"10px"}}>
-                    <Outlet></Outlet>
+            <div style={{ marginTop: "10px" }}>
+                <Outlet></Outlet>
             </div>
         </div>
     )
