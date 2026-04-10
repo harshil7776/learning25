@@ -1,126 +1,41 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { useEffect, useState } from 'react'
 // import './App.css'
 // import "./assets/CSS/formtask1.css"
-import { ContentComponet } from './Components/ContentComponet'
-import HeaderComponent from './Components/HeaderComponent'
-import { FooterComponent } from './Components/FooterComponent'
-import { MapDemo } from './Components/MapDemo'
-import { MapDemo2 } from './Components/MapDemo2'
-import { MapDemo3 } from './Components/MapDemo3'
-import { MapDemo4 } from './Components/MapDemo4'
-import { MapDemo5 } from './Components/MapDemo5'
-import { MapDemo6 } from './Components/MapDemo6'
-import { MapDemo7 } from './Components/MapDemo7'
-import { MapTask1 } from './Components/MapTask1'
-import { MapTask2 } from './Components/MapTask2'
-import { Route, Routes } from 'react-router-dom'
-import { NetflixHome } from './Components/netflix/NetflixHome'
-import { NetflixShows } from './Components/netflix/NetflixShows'
-import { Navbar } from './Components/Navbar'
-import { Error404 } from './Components/Error404'
-import { HomeComponent } from './Components/HomeComponent'
-import { PlayContent } from './Components/netflix/PlayContent'
-import { NetflixMovies } from './Components/netflix/NetflixMovies'
-import { UseStateDemo } from './Components/UseStateDemo'
-import { UseStateDemo2 } from './Components/UseStateDemo2'
-import { BooksTask1 } from './Components/Books/BooksTask1'
-import { BooksDescription } from './Components/Books/BooksDescription'
-import { UseStateDemo3 } from './Components/UseStateDemo3'
-import { InputDemo1 } from './Components/input/InputDemo1'
-import { InputDemo2 } from './Components/input/InputDemo2'
-import { Product2 } from './Components/Product2'
-import { SelectDropDown } from './Components/SelectDropDown'
-import { DependDropDown } from './Components/input/DependDropDown'
-import { Formdemo1 } from './Components/form/Formdemo1'
-import { Formdemo2 } from './Components/form/Formdemo2'
-import { Formdemo5 } from './Components/form/Formdemo5'
-import { Formdemo6 } from './Components/form/Formdemo6'
-import { Formdemo7 } from './Components/form/Formdemo7'
-import { FormTask1 } from './Components/form/FormTask1'
-import { Task1 } from './Components/internship/task/Task1'
-import { Play } from './Components/internship/task/Play'
-import { Formdemo8 } from './Components/form/Formdemo8'
-import { FormdemoTask2 } from './Components/form/FormdemoTask2'
-import { Formdemo9 } from './Components/form/Formdemo9'
-import { Formtask2 } from './Components/form/Formtask2'
-import { ApiDemo1 } from './Components/api/ApiDemo1'
-import { ApiDemo2 } from './Components/api/ApiDemo2'
-import { OmbdApiDemo } from './Components/api/OmbdApiDemo'
-import { UseEffectDemo1 } from './Components/UseEffectDemo1'
-import { ApiDemo3 } from './Components/api/ApiDemo3'
-import { ApiFormDemo1 } from './Components/api/ApiFormDemo1'
 import { Bounce, ToastContainer, Zoom } from 'react-toastify'
-import { UpdateUser } from './Components/api/UpdateUser'
-import { UseMemoDemo } from './Components/UseMemoDemo'
-import { FindBombGame } from './Components/FindBombGame'
-import { MemoryGame } from './Components/MemoryGame'
-
+import { ThemeContext} from './Components/ThemeContext'
+import AppRoutes from './router/AppRoutes'
 
 function App() {
 
-  return (
-    <div>
-      <Navbar></Navbar>
-      <ToastContainer
-        position="top-right"
-        autoClose={5000}
-        hideProgressBar={false}
-        newestOnTop={false}
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-        theme="colored"
-        transition={Bounce}
-      />
-      <Routes>
-        <Route path='/' element={<HomeComponent />}></Route>
-        <Route path='/netflixhome' element={<NetflixHome />}></Route>
-        <Route path='/netflixshows' element={<NetflixShows />}></Route>
-        <Route path='/netflixmovies' element={<NetflixMovies />}></Route>
-        {/* <Route path='/watch' element = {<PlayContent/>}></Route> */}
-        <Route path='/watch/:id' element={<PlayContent />}></Route>
-        <Route path='/*' element={<Error404 />}></Route>
-        <Route path='/useStateDemo' element={<UseStateDemo />}></Route>
-        <Route path='/useStateDemo2' element={<UseStateDemo2 />}></Route>
-        <Route path='/useStateDemo3' element={<UseStateDemo3 />}></Route>
-        <Route path='/bookstask1' element={<BooksTask1 />}></Route>
-        <Route path='/Book/:id' element={<BooksDescription />}></Route>
-        <Route path='/inputdemo1' element={<InputDemo1 />}></Route>
-        <Route path='/inputdemo2' element={<InputDemo2 />}></Route>
-        <Route path='/product2' element={<Product2 />}></Route>
-        {/* <Route path='/selectdropdown' element={<SelectDropDown/>}></Route> */}
-        <Route path='/dropdown' element={<DependDropDown />}></Route>
-        <Route path='/formdemo1' element={<Formdemo1 />}></Route>
-        <Route path='/formdemo2' element={<Formdemo2 />}></Route>
-        <Route path='/formdemo5' element={<Formdemo5 />}></Route>
-        <Route path='/formdemo6' element={<Formdemo6 />}></Route>
-        <Route path='/formdemo7' element={<Formdemo7 />}></Route>
-        <Route path='/formtask1' element={<FormTask1 />}></Route>
-        <Route path='/formtask8' element={<Formdemo8 />}></Route>
-        <Route path='/formtask2watch' element={<FormdemoTask2 />}></Route>
-        <Route path='/iplteam' element={<Task1 />}></Route>
-        <Route path='/ipl/:id' element={<Play />}></Route>
-        <Route path='/formtask9' element={<Formdemo9 />}></Route>
-        <Route path='/irctctask2' element={<Formtask2 />}></Route>
-        <Route path='/apidemo1' element={<ApiDemo1 />}></Route>
-        <Route path='/updateuser/:id' element = {<UpdateUser/>}></Route>
-        <Route path='/apidemo2' element={<ApiDemo2 />}></Route>
-        <Route path='/apidemo3' element={<ApiDemo3 />}></Route>
-        <Route path='/apiform' element={<ApiFormDemo1 />}></Route>
-        <Route path='/ombd' element={<OmbdApiDemo />}></Route>
-        <Route path='/useeffect' element={<UseEffectDemo1 />}></Route>
-        <Route path='/usememo' element = {<UseMemoDemo/>}></Route>
-        <Route path='/findbomb' element = {<FindBombGame/>}></Route>
-        <Route path='/memorygame' element = {<MemoryGame/>}></Route>
-      </Routes>
+  const [theme, settheme] = useState(()=>{
+    return localStorage.getItem("theme")  || "light"
+  });
 
+  useEffect(()=>{
+    localStorage.setItem("theme",theme)
+  },[theme])
+
+  return (
+    <div style={{ backgroundColor: theme == "light" ? "white" : "black", color: theme == "light" ? "black" : "white" }}>
+      <ThemeContext.Provider value={{ theme, settheme }}>
+        <ToastContainer
+          position="top-right"
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="colored"
+          transition={Bounce}
+        />
+
+        <AppRoutes></AppRoutes>
+        
+      </ThemeContext.Provider>
     </div>
   )
 }
-
-
 export default App
